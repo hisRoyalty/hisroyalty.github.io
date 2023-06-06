@@ -20,7 +20,7 @@ const Header = ({ darkMode, setDarkMode }) => {
           <a href="https://github.com/hisroyalty">
             <GitHubIcon className="mr-2" />
           </a>
-          <p className="text-2xl">HisRoyal</p>
+          <p className="text-2xl">hisRoyalty</p>
         </div>
         <div onClick={handleDarkModeToggle}>
           {darkMode ? (
