@@ -35,7 +35,7 @@ const Main = ({darkMode}) => {
         </div>
       </div>
       <div className="image-container ml-40">
-        <img src={state.image} alt="Portfolio" className="mt-6 w-4/6 h-4/5" />
+        <img src={state.image} alt="Portfolio" className="mt-6 w-4/6 h-4/5 rounded-xl" />
       </div>
     </div>
   );
