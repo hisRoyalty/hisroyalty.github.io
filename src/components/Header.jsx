@@ -17,7 +17,7 @@ const Header = ({ darkMode, setDarkMode }) => {
     <header className={headerClassName}>
       <nav className="flex justify-between items-center p-5 px-5">
         <div className="flex items-center">
-          <a href="https://github.com/your-github-profile">
+          <a href="https://github.com/hisroyalty">
             <GitHubIcon className="mr-2" />
           </a>
           <p className="text-2xl">HisRoyal</p>
