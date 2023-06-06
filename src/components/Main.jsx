@@ -6,7 +6,7 @@ const Main = ({darkMode}) => {
     title: "Hi,",
     title2: "I'm",
     title3: "Royal",
-    image: "/image/portfolioImage.png"
+    image: '/image/patrick2.png'
   });
 
   const mainClassName = darkMode ? 'Main bg-slate-600 min-h-screen flex items-center justify-center' : 'Main bg-white min-h-screen flex items-center justify-center';
