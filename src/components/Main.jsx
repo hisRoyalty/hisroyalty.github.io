@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Typewriter from 'typewriter-effect';
+import { TypeAnimation } from 'react-type-animation';
 
 const Main = ({darkMode}) => {
   const [state] = useState({
@@ -9,7 +9,7 @@ const Main = ({darkMode}) => {
     image: '/image/patrick2.png'
   });
 
-  const mainClassName = darkMode ? 'Main bg-slate-600 min-h-screen flex items-center justify-center' : 'Main bg-white min-h-screen flex items-center justify-center';
+  const mainClassName = darkMode ? 'Main bg-slate-600 min-h-screen flex items-center justify-center' : 'Main bg-gray-100 min-h-screen flex items-center justify-center';
   const h2ClassName = darkMode ? 'text-white text-6xl' : 'text-black text-6xl';
   return (
     <div className={mainClassName}>
@@ -20,18 +20,19 @@ const Main = ({darkMode}) => {
           <div className="title3 animate-fade-in text-yellow-300 font-bold mb-3">{state.title3}</div>
         </h2>
         <div className="text-3xl mb-5">
-          <Typewriter
-            options={{
-              autoStart: true,
-              loop: true,
-              delay: 38,
-              strings: [
-                "I'm a programmer.",
-                "I'm a numismatist.",
-                "I'm a linguist."
-              ],
-            }}
-          ></Typewriter>
+          <span>I'm a </span>
+          <TypeAnimation
+            sequence={[
+              'programmer',
+              2000,
+              'developer',
+              2000,
+              'numismatist',
+              2000,
+            ]}
+            wrapper='span'
+            repeat={Infinity}
+          ></TypeAnimation>
         </div>
       </div>
       <div className="image-container ml-40">
